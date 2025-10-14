@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gusde Homestay</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap" rel="stylesheet"> 
+    <link rel="stylesheet" href="style.css">
+    <style>
+        body { font-family: 'Poppins', sans-serif; background-color: #f8f9fa; }
+        .navbar { background: linear-gradient(90deg, #28a745, #00b4d8); transition: all 0.3s ease; }
+        .navbar:hover { box-shadow: 0 4px 8px rgba(0,0,0,0.1); }
+        .hero { background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('https://source.unsplash.com/1600x900/?bali-villa') no-repeat center center; background-size: cover; height: 80vh; color: white; display: flex; align-items: center; justify-content: center; text-shadow: 1px 1px 2px rgba(0,0,0,0.5); }
+        .btn-modern { background: linear-gradient(45deg, #28a745, #00b4d8); border: none; transition: transform 0.3s ease, box-shadow 0.3s ease; }
+        .btn-modern:hover { transform: scale(1.05); box-shadow: 0 4px 12px rgba(0,180,216,0.3); }
+        .card { border-radius: 15px; overflow: hidden; transition: transform 0.3s ease, box-shadow 0.3s ease; }
+        .card:hover { transform: translateY(-10px); box-shadow: 0 8px 16px rgba(0,0,0,0.2); }
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark" data-aos="fade-down" data-aos-duration="800">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="index.html">Gusde Homestay</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="rooms.html">Rooms</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <section class="hero text-center" data-aos="zoom-in" data-aos-duration="1000">
+        <div class="container">
+            <h1 class="display-4">Selamat Datang di Gusde Homestay</h1>
+            <p class="lead">Penginapan mewah yang terletak di Jalan Kajeng No. 4, dengan pemandangan alam yang menakjubkan.</p>
+            <a href="contact.html" class="btn btn-modern btn-lg">Booking Now</a>
+        </div>
+    </section>
+    <section class="container my-5" data-aos="fade-up" data-aos-duration="800">
+        <h2 class="text-center mb-4">Our Gallery</h2>
+        <div id="villaCarousel" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="img/img1.jpg" class="d-block w-100" alt="Villa 1">
+                </div>
+                <div class="carousel-item">
+                    <img src="img/img2.jpg" class="d-block w-100" alt="Villa 2">
+                </div>
+                <div class="carousel-item">
+                    <img src="img/img3.jpg" class="d-block w-100" alt="Villa 3">
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#villaCarousel" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#villaCarousel" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+    </section>
+    <section class="container my-5" data-aos="fade-up" data-aos-duration="1000">
+        <h2 class="text-center mb-4">Mengapa Memilih Kami?</h2>
+        <div class="row">
+            <div class="col-md-4 text-center" data-aos="zoom-in" data-aos-delay="200">
+                <i class="bi bi-house-fill" style="font-size: 2rem; color: #28a745;"></i>
+                <h5>Penginapan Mewah</h5>
+                <p>Penginapan dengan desain tradisional Bali dan fasilitas modern.</p>
+            </div>
+            <div class="col-md-4 text-center" data-aos="zoom-in" data-aos-delay="400">
+                <i class="bi bi-geo-alt-fill" style="font-size: 2rem; color: #28a745;"></i>
+                <h5>Lokasi Strategis</h5>
+                <p>Berada di Jalan Kajeng No. 4, berada di pusat Ubud.</p>
+            </div>
+            <div class="col-md-4 text-center" data-aos="zoom-in" data-aos-delay="600">
+                <i class="bi bi-star-fill" style="font-size: 2rem; color: #28a745;"></i>
+                <h5>Layanan Terbaik</h5>
+                <p>Tim profesional siap membantu selama masa menginap.</p>
+            </div>
+        </div>
+    </section>
+  <footer class="bg-dark text-white text-center py-3 mt-5" data-aos="fade-up" data-aos-duration="800" data-aos-easing="ease-out">
+        <p>&copy; 2025 Gusde Homestay. Jalan Kajeng No. 4, Ubud, Bali.</p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            once: true, 
+            easing: 'ease-out', 
+            duration: 800
+        });
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.min.js"></script>
+</body>
+</html>

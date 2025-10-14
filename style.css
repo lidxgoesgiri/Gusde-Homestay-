@@ -1,0 +1,99 @@
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: #f8f9fa;
+  color: #212529;
+}
+
+h1, h2, h3, h4, h5 {
+  font-weight: 700;
+}
+
+p {
+  font-weight: 300;
+  line-height: 1.7;
+}
+
+.navbar {
+  background: linear-gradient(90deg, #28a745, #00b4d8);
+  transition: all 0.3s ease-in-out;
+}
+.navbar:hover {
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+.nav-link {
+  color: #fff !important;
+  font-weight: 500;
+}
+.nav-link:hover {
+  color: #ffea00 !important;
+  text-shadow: 0 0 8px rgba(255,255,255,0.6);
+}
+
+.hero {
+  background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),
+              url('https://source.unsplash.com/1600x900/?bali,villa') no-repeat center center/cover;
+  height: 85vh;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  animation: fadeIn 2s ease-in-out;
+}
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(-20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.btn-modern {
+  background: linear-gradient(45deg, #28a745, #00b4d8);
+  border: none;
+  color: white;
+  padding: 10px 25px;
+  border-radius: 30px;
+  transition: all 0.3s ease;
+}
+.btn-modern:hover {
+  transform: scale(1.08);
+  box-shadow: 0 4px 12px rgba(0,180,216,0.4);
+}
+
+.card {
+  border-radius: 15px;
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+}
+
+.img-fluid {
+  border-radius: 15px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease;
+}
+.img-fluid:hover {
+  transform: scale(1.05);
+}
+
+footer {
+  background: #000;
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+  font-weight: 300;
+}
+
+.fade-in-up {
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fadeUp 1s forwards;
+}
+@keyframes fadeUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
